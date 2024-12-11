@@ -15,6 +15,8 @@ function App() {
     addItem(initItem => {
       return ([...initItem, itemName]);
     });
+
+    setItem("");
   }
 
   return (
@@ -26,6 +28,7 @@ function App() {
         <input
           onChange={handleChange}
           type="text"
+          value={itemName}
         />
         <button onClick={handleClick}>
           <span>Add</span>
