@@ -1,5 +1,5 @@
 import { useState } from "react";
-import List from "./ToDoItem";
+import ToDoItem from "./ToDoItem";
 
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
         <ul>
           {items.map(item => {
             return (
-              <List itemValue={item}/>
+              <ToDoItem itemValue={item}/>
             );
           })}
         </ul>
